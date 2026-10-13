@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-app {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.weather-app h1 {
+    margin-bottom: 20px;
+    color: #2d3436;
+    font-size: 1.8rem;
+}
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#cityInput:focus {
+    border-color: #0984e3;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #74b9ff;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    color: #636e72;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+#error {
+    background-color: #ff7675;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3436;
+    margin: 10px 0;
+}
+
+#description {
+    text-transform: capitalize;
+    color: #636e72;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+#humidity {
+    color: #636e72;
+    font-size: 0.95rem;
+}
+
+.history-section {
+    margin-top: 25px;
+    border-top: 1px solid #dfe6e9;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.history-section h3 {
+    font-size: 1rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+#historyList {
+    list-style: none;
+    max-height: 100px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#historyList li {
+    background: #f1f2f6;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+#historyList li:hover {
+    background: #dfe6e9;
+}
+
+.clear-btn {
+    width: 100%;
+    background-color: #d63031;
+    font-size: 0.85rem;
+    padding: 6px;
+}
+
+.clear-btn:hover {
+    background-color: #ff7675;
+}
